@@ -1,0 +1,63 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="pipper.css">
+    <title>pipper</title>
+</head>
+
+
+<body>
+
+
+<div class="container">
+    <div class="menu">
+        <h1>Pipper</h1>
+        <img id="pipperIkon" src="/svg/bird-svgrepo-com.svg" alt="">
+        <button onclick="btnClicker()" id="myBtn"><img src="/svg/music-svgrepo-com.svg" alt=""></button>
+    </div>
+
+    <div id="modal">
+        <div class="modal-content">
+            <form id="pipForm">
+                <button id="btnCloser" onclick="btnCloser()">X</button>
+                <input id="userName" type="text" placeholder="Brugernavn">
+                <img class="pip-child" src="/svg/bird-svgrepo-com.svg" alt="">
+                <textarea id="pipMsg" cols="30" rows="10" maxlength="255" placeholder="Din pip besked.."></textarea>
+                <span id="charCount">0/255</span>
+                <input type="submit" value="">
+            </form>
+        </div>
+    </div>
+
+
+    
+        <div class="pip-wrap">
+            <div class="pip-header">
+                <img src=" " alt="">
+                <img src=" " alt="" class="avator">
+                <span></span>
+                <div class="pip-header-info">        
+                </div>
+            </div>  
+        </div>
+
+    <template id="my-template">
+        <div>
+            <button id="deletePip">delete</button>
+            <img id="avatorImg" />
+            <span id="timeOfPip"></span>
+            <h3>hej</h3>
+            <p>lame</p>
+        </div>
+    </template>
+</div>
+        <script src="pipper.js" defer></script>
+</body>
+</html>
